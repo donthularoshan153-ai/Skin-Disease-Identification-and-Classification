@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Disease Prediction</title>
+    <link rel="stylesheet" href="{% static 'prediction/styles.css' %}">
+    <script src="{% static 'prediction/main.js' %}" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#result">Result</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to Skin Disease Prediction</h1>
+        <!-- Add home content -->
+    </section>
+
+    <section id="result">
+        <h2>Prediction Result</h2>
+        <!-- Add result content -->
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <!-- Add about content -->
+    </section>
+
+    <script>
+        // Optional: Add smooth scrolling effect
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
